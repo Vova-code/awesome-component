@@ -1,27 +1,49 @@
 # AwesomeComponent
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+Une application Angular conçue pour servir de base à la création de composants dynamiques et modernes.
 
-## Development server
+## Fonctionnalités
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Modularité** : Architecture modulaire pour un développement évolutif.
+- **Personnalisation facile** : Idéal pour tester et intégrer des composants Angular.
+- **Technologies utilisées** : Angular, TypeScript, SCSS.
 
-## Code scaffolding
+## Prérequis
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js (version 18.19+ recommandée)
+- Angular CLI (`npm install -g @angular/cli`)
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Cloner le dépôt** :
+  ```bash
+    git clone https://github.com/Vova-code/awesome-component.git
+    cd awesome-component
+  ```
 
-## Running unit tests
+2. **Installer les dépendances** :
+  ```bash
+    npm install
+  ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. **Lancer le serveur de développement** :
+  ```bash
+    ng serve
+  ```
 
-## Running end-to-end tests
+Rendez-vous sur http://localhost:4200 pour voir l'application.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Commandes utiles
 
-## Further help
+- **Générer un composant** :
+  ```bash
+    ng generate component nom-du-composant
+  ```
+- **Construire le projet ** :
+  ```bash
+    ng build
+  ```
+  Les artefacts seront générés dans le dossier `dist/`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Contribution
+Les suggestions et contributions sont les bienvenues ! Forkez le projet et ouvrez une pull request.
