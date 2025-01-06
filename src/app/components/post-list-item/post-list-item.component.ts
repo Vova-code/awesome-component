@@ -5,6 +5,7 @@ import {MatCardModule} from '@angular/material/card';
 import {CommentsComponent} from '../comments/comments.component';
 import {ShortenPipe} from '../../pipes/shorten.pipe';
 import {TimeAgoPipe} from '../../pipes/time-ago.pipe';
+import {HighlightDirective} from '../../directives/highlight.directive';
 
 @Component({
   selector: 'app-post-list-item',
@@ -16,7 +17,8 @@ import {TimeAgoPipe} from '../../pipes/time-ago.pipe';
     NgIf,
     CommentsComponent,
     ShortenPipe,
-    TimeAgoPipe
+    TimeAgoPipe,
+    HighlightDirective
   ],
   templateUrl: './post-list-item.component.html',
   styleUrl: './post-list-item.component.scss'
