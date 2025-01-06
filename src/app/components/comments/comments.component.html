@@ -11,8 +11,12 @@
 @if (comments.length) {
   <mat-list>
     <h2 matSubheader>Commentaires</h2>
-    @for (comment of comments; track comment.id) {
-      <mat-list-item>
+    @for (comment of comments; track comment.id; let i = $index) {
+      <mat-list-item
+        [@listItem]="animationStates[i]"
+        (mouseenter)="onListItemMouseEnter(i)"
+        (mouseleave)="onListItemMouseLeave(i)"
+      >
         <span mat-line>{{ comment.comment }}</span>
         <span mat-line>{{ comment.createdDate | date }}</span>
       </mat-list-item>

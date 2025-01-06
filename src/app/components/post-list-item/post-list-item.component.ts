@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Post} from '../../models/post.model';
-import {DatePipe, NgIf, TitleCasePipe} from '@angular/common';
+import {NgIf, TitleCasePipe} from '@angular/common';
 import {MatCardModule} from '@angular/material/card';
 import {CommentsComponent} from '../comments/comments.component';
 import {ShortenPipe} from '../../pipes/shorten.pipe';
@@ -13,7 +13,6 @@ import {HighlightDirective} from '../../directives/highlight.directive';
   imports: [
     TitleCasePipe,
     MatCardModule,
-    DatePipe,
     NgIf,
     CommentsComponent,
     ShortenPipe,
