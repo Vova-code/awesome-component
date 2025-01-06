@@ -3,6 +3,8 @@ import {Post} from '../../models/post.model';
 import {DatePipe, NgIf, TitleCasePipe} from '@angular/common';
 import {MatCardModule} from '@angular/material/card';
 import {CommentsComponent} from '../comments/comments.component';
+import {ShortenPipe} from '../../pipes/shorten.pipe';
+import {TimeAgoPipe} from '../../pipes/time-ago.pipe';
 
 @Component({
   selector: 'app-post-list-item',
@@ -12,7 +14,9 @@ import {CommentsComponent} from '../comments/comments.component';
     MatCardModule,
     DatePipe,
     NgIf,
-    CommentsComponent
+    CommentsComponent,
+    ShortenPipe,
+    TimeAgoPipe
   ],
   templateUrl: './post-list-item.component.html',
   styleUrl: './post-list-item.component.scss'
